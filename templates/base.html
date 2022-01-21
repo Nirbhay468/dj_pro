@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <link rel="sytlesheet" type="text.css" href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}"/>
+    <link rel = "stylesheet" type="text/css", href="{% static 'css/style.css' %}"/>
+
+    {% include 'navbar.html'%}
+</head>
+<body>
+{% block body %} 
+
+{% endblock %}
+</body>
+</html>
